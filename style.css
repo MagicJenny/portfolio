@@ -12,16 +12,29 @@
 /* ----------- Hero ----------- */
 
 #hero {
-  background-image: url(./images/hero-image.jpeg);
+  background-image: url(./images/hero-image.jpg);
   background-size: cover;
-  background-position: center bottom;
+  background-position: bottom;
 }
-
 
   #hero {
     height: 100vh;
-    max-height: 600px;
+    max-height: 800px;
 }
+
+.shape-img {
+    position: absolute;
+    bottom: -10px;
+    width: 100%;
+    z-index: 1;
+}
+
+.shape-img img {
+    display: block;
+    max-width: 100%;
+    width: 100%;
+}
+
 
 .header {
     color: #f8f8f8;
@@ -29,15 +42,72 @@
     padding-top: 220px;
 }
 
+.social-media {
+    padding-left: 0;
+    margin: 30px 0 0;
+}
+
+.social-media li {
+    list-style-type: none;
+    display: inline-block;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    text-align: center;
+    background-color: #333;
+    margin-right: 5px;
+    border-radius: 3px;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.social-media li:hover {
+    transform: rotate(45deg);
+    transition: all 0.3s ease-in-out;
+    opacity: 0.8;
+}
+
+.social-media li a {
+    color: #fff;
+    display: block;
+    font-size: 16px;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.social-media li a:hover {
+    color: #fff;
+    display: block;
+    font-size: 16px;
+    -webkit-transform: rotate(-85deg);
+    transform: rotate(-85deg);
+}
+
+.social-media li a i {
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.social-media .github {
+    background-color: #333333;
+}
+
+.social-media .linkedin {
+    background-color: #007bb5;
+}
+
+.social-media .email {
+    background-color: #25d366;
+}
+
+
+/* ----------- About ----------- */
+
 #about {
   padding-top: 100px;
   padding-bottom: 100px;
-}
-
-#portfolio {
-  padding-top: 100px;
-  padding-bottom: 100px;
-  background-color: #efefef;
 }
 
 .tag-black {
@@ -49,6 +119,14 @@
   border-radius: 50px;
   font-size: 12px;
   cursor: default;
+}
+
+
+/* ----------- Portfolio ----------- */
+#portfolio {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-color: #efefef;
 }
 
 .box {
