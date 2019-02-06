@@ -1,3 +1,34 @@
+/* ----------- General ----------- */
+
+.mb-10 {
+  margin-bottom: 10px;
+}
+
+.mb-20 {
+  margin-bottom: 20px;
+}
+
+.mb-30 {
+  margin-bottom: 30px;
+}
+
+.mb-40 {
+  margin-bottom: 40px;
+}
+
+.mb-50 {
+  margin-bottom: 50px;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+
+
+
 /* ----------- Navigation ----------- */
 
 #mainNav a{
@@ -35,12 +66,12 @@
     width: 100%;
 }
 
-
 .header {
     color: #f8f8f8;
     position: relative;
     padding-top: 220px;
 }
+
 
 .social-media {
     padding-left: 0;
@@ -81,8 +112,8 @@
     color: #fff;
     display: block;
     font-size: 16px;
-    -webkit-transform: rotate(-85deg);
-    transform: rotate(-85deg);
+    -webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg);
 }
 
 .social-media li a i {
@@ -103,11 +134,41 @@
 }
 
 
+.next-section {
+    position: relative;
+    left: 22%;
+    bottom: -250px;
+    z-index: 2;
+    width: 14px;
+}
+
+.next-section a {
+    display: block;
+    color: #fff;
+    font-size: 12px;
+    letter-spacing: 0.2em;
+    position: relative;
+}
+
+@media (max-width: 576px) {
+  .next-section {
+    left: 27%;
+    bottom: -280px;
+    }
+}
+
+
 /* ----------- About ----------- */
 
 #about {
   padding-top: 100px;
   padding-bottom: 100px;
+}
+
+#about .introduction {
+  color: #36bdd0;
+  font-size: 18px;
+  font-weight: 700;
 }
 
 .tag-black {
@@ -121,8 +182,46 @@
   cursor: default;
 }
 
+.color-2 span {
+    color: #36bdd0;
+}
+
+.section-title span {
+    position: relative;
+}
+
+.section-title span:before {
+    content: "";
+    background-color: #eee;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 30px;
+    height: 4px;
+    border-radius: 5px;
+    z-index: 1;
+}
+
+.section-title span:after {
+    content: "";
+    background-color: #eee;
+    position: absolute;
+    bottom: -10px;
+    left: 32px;
+    width: 10px;
+    height: 4px;
+    z-index: 2;
+    border-radius: 5px;
+}
+
+.color-2 span:before, .color-2 span:after {
+    background-color: #36bdd0;
+}
+
+
 
 /* ----------- Portfolio ----------- */
+
 #portfolio {
   padding-top: 100px;
   padding-bottom: 100px;
@@ -155,4 +254,23 @@ border: 0;
 position: absolute;
 top: 0;
 left: 0;
+}
+
+
+
+
+.footer {
+    background-color: #666;
+    padding: 30px 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.love i {
+    color: #ea41ac;
+}
+
+.footer {
+    background-color: #36bdd0;
 }
