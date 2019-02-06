@@ -26,6 +26,43 @@ body {
   line-height: 1.5;
 }
 
+.post-title a {
+  font-size: 22px;
+  color: black;
+}
+
+.post-title a:hover {
+  text-decoration: none;
+}
+
+#portfolio a {
+  color: black;
+}
+
+#portfolio a:hover {
+  text-decoration: none;
+}
+
+.post-info-date {
+  text-decoration: none;
+}
+
+.post-text p {
+  font-size: 13px;
+}
+
+.post-info-top {
+  font-size: 13px;
+}
+
+.post-info-tag {
+  color: #36bdd0;
+}
+
+
+.post-info {
+  padding: 0 20px;
+}
 
 
 
@@ -228,36 +265,41 @@ body {
   background-color: #efefef;
 }
 
+
 .box {
   box-shadow: 0 2px 20px 0 rgba(0,0,0,0.05);
   border-radius: 4px;
   transform: translateZ(0);
   background-color: #fff;
-  overflow: hidden;
-  height: 400px;
+  height: 480px;
+  margin-bottom: 30px;
 }
 
-.box:hover {
+@media (max-width: 768px) {
+  .box {
+    height: 550px;
+    }
+}
 
-    transition: box-shadow 0.3s ease-out 0.1s;
-    transition: transform 0.3s ease-out 0.1s;
-    transition: opacity 0.2s ease-out 0.1s;
+
+.box:hover {
+    transition: box-shadow 0.3s ease-out 0.3s;
+    transition: transform 0.3s ease-out 0.3s;
+    transition: opacity 0.2s ease-out 0.3s;
     margin-top: -5px;
 }
 
-.post-photo {
-  height: 50px;
-width: 100%;
-object-position: center;
-object-fit: cover;
-border: 0;
-position: absolute;
-top: 0;
-left: 0;
-}
 
 
+  /* ----------- Images ----------- */
 
+  .aspectRatioBox {
+    padding-top: calc(2 / 3 * 100%); /* aspect ratio 3:2 */
+    background-size: cover;
+    background-position: center;
+  }
+
+/* ----------- Footer ----------- */
 
 .footer {
     background-color: #666;
