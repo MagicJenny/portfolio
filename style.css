@@ -49,6 +49,7 @@ body {
 
 .post-info-date {
   text-decoration: none;
+  color: #757575;
 }
 
 .post-text p {
@@ -84,6 +85,22 @@ body {
 
 
 /* ----------- Hero ----------- */
+.hello {
+  color: #bbb;
+  font-size: 30px;
+  letter-spacing: 1.2px;
+}
+
+.title {
+  font-size: 50px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+}
+
+.position {
+  letter-spacing: 1.2px;
+  font-weight: 100;
+}
 
 #hero {
   background-image: url(./images/hero-image.jpg);
@@ -185,19 +202,19 @@ body {
     width: 14px;
 }
 
+@media (max-width: 576px) {
+  .next-section {
+    left: 27%;
+    bottom: -280px;
+    }
+}
+
 .next-section a {
     display: block;
     color: #fff;
     font-size: 12px;
     letter-spacing: 0.2em;
     position: relative;
-}
-
-@media (max-width: 576px) {
-  .next-section {
-    left: 27%;
-    bottom: -280px;
-    }
 }
 
 
@@ -210,23 +227,50 @@ body {
 
 #about .introduction {
   color: #36bdd0;
-  font-size: 18px;
-  font-weight: 700;
+  font-size: 19px;
+  font-weight: 600;
+  margin-bottom: 15px;
 }
 
-.tag-black {
+.tag {
   display: inline-block;
   margin-right: 5px;
   margin-bottom: 5px;
   padding: 3px 10px;
-  border: 1px solid #000;
   border-radius: 50px;
   font-size: 12px;
   cursor: default;
 }
 
+.tag-black {
+  border: 1px solid #000;
+  color: #000;
+}
+
+.tag-blue {
+  border: 1px solid #007bb5;
+  color: #007bb5;
+}
+
+.tag-green {
+  border: 1px solid #25d366;
+  color: #25d366;
+}
+
+
+
 .color-2 span {
     color: #36bdd0;
+}
+
+@media (max-width: 768px) {
+  .profile .section-title {
+    padding-top: 30px;
+  }
+}
+
+.section-title {
+  font-weight: 600;
 }
 
 .section-title span {
